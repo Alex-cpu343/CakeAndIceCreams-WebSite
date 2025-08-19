@@ -13,20 +13,22 @@ export default function Products() {
   };
 
   return (
-    <main className="p-6 h-[75vh]">
-      <h1 className="text-4xl font-bold mb-6 text-[#2e2525]">All Products</h1>
+    <main className="p-6 min-h-[75vh]">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-[#2e2525] text-center sm:text-left">
+        All Products
+      </h1>
 
-      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-6 w-full relative right-5 h-100vh ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
         {products.map((product: any) => (
           <div
             key={product.id}
-            className=" p-4 rounded-lg shadow hover:shadow-2xl transition flex  items-center w-[30vw]"
+            className="flex flex-col items-start justify-between p-4 rounded-lg shadow hover:shadow-2xl transition bg-white"
           >
-            <h3 className="text-2xl font-bold mb-2">{product.name}</h3>
-            <p className="mb-1 text-xl">Price: ${product.price}</p>
-            <p className="text-xl">Stock: {product.stock}</p>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-2">{product.name}</h3>
+            <p className="mb-1 text-lg sm:text-xl">Price: ${product.price}</p>
+            <p className="mb-2 text-lg sm:text-xl">Stock: {product.stock}</p>
             <button
-              className="mt-2 px-4 py-1 bg-[#da5f69] rounded hover:bg-[#e093b1] text-white  h-15"
+              className="mt-auto px-4 py-2 bg-[#da5f69] rounded hover:bg-[#e093b1] text-white shadow transition duration-300 w-full sm:w-auto text-center"
               onClick={() => addToCart(product)}
             >
               Add to Cart

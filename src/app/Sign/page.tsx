@@ -93,7 +93,7 @@ export default function AuthModule() {
   if (mode === "choose") {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-6 bg-[#ffe6ea]">
-        <h1 className="text-9xl font-black text-pink-700">Welcome!</h1>
+        <h1 className="text-8xl font-black text-pink-700 xl:text-9xl ">Welcome!</h1>
         <div className="flex gap-4">
           <button
             className=" w-50 h-15 bg-pink-400 text-white rounded-xl hover:bg-pink-500 transition"
