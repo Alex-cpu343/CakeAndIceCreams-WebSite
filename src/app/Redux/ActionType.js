@@ -1,0 +1,19 @@
+
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
+
+
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+
+
+export const LOAD_CART = "LOAD_CART"
+
+export const REDUCE_STOCK = "REDUCE_STOCK";
+
+export const TOGGLE_CART_VISIBILITY = "TOGGLE_CART_VISIBILITY";
+export const REGISTER_USER = "REGISTER_USER";
+export const LOGIN_USER = "LOGIN_USER";
+export const LOGOUT_USER = "LOGOUT_USER";
+
+export const SAVE_PURCHASE_HISTORY = "SAVE_PURCHASE_HISTORY";
